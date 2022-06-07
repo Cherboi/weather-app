@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link html="https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}"
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./assets/stylesheet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
+
 <body>
-    
+    <div class="app-wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." />
+          </header>
+        <main>
+            <section class="location">
+                <div class="city">Tinton Falls, NJ</div>
+                <div class="date">Thusday 7 june 2020</div>
+            </section>
+            <div class="current">
+                <div class="temp">75<span>°F</span></div>
+                <div class="weather">Sunny</div>
+                <div class="hi-low">60°F / 80°F</div>
+            </div>
+        </main>
+    </div>
+    <script src="./assets/javascript.js"></script>
 </body>
 </html>
